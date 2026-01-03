@@ -1,163 +1,72 @@
 <!DOCTYPE html>
-<html lang="fil">
+<html lang="tl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maligayang Kaarawan!</title>
-    <style>
-        /* General Reset and Fonts */
-        body, html {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Georgia', serif; /* Classic, professional font */
-            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
-            color: #333;
-            line-height: 1.6;
-        }
-
-        /* Container Styling */
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        /* Hero Section */
-        header {
-            padding: 60px 0;
-            animation: fadeIn 2s ease-in;
-        }
-
-        h1 {
-            font-size: 3.5rem;
-            color: #b76e79; /* Old Rose color */
-            margin-bottom: 10px;
-            font-weight: normal;
-            letter-spacing: 2px;
-        }
-
-        .subtitle {
-            font-size: 1.2rem;
-            color: #666;
-            font-style: italic;
-            margin-bottom: 40px;
-        }
-
-        /* Poem Section */
-        .poem-card {
-            background: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            margin-bottom: 40px;
-            border-top: 5px solid #b76e79;
-            transition: transform 0.3s ease;
-        }
-
-        .poem-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .poem-text {
-            font-size: 1.3rem;
-            color: #444;
-            white-space: pre-line; /* Preserves poetic line breaks */
-            margin-bottom: 20px;
-            font-style: italic;
-        }
-
-        /* Wish Section */
-        .wish-section {
-            padding: 20px;
-        }
-
-        h2 {
-            color: #b76e79;
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.1rem;
-            color: #555;
-            max-width: 600px;
-            margin: 0 auto 20px auto;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: #b76e79;
-            color: white;
-            padding: 12px 30px;
-            text-decoration: none;
-            border-radius: 50px;
-            transition: background 0.3s;
-            margin-top: 20px;
-        }
-
-        .btn:hover {
-            background-color: #a05a65;
-        }
-
-        /* Footer */
-        footer {
-            margin-top: 50px;
-            font-size: 0.9rem;
-            color: #999;
-        }
-
-        /* Animation */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* Mobile Responsiveness */
-        @media (max-width: 600px) {
-            h1 { font-size: 2.5rem; }
-            .poem-text { font-size: 1.1rem; }
-        }
-    </style>
+    <title>Maligayang Kaarawan, Xara!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="container">
-        <header>
-            <h1>Maligayang Kaarawan</h1>
-            <div class="subtitle">Para sa isang natatanging kaibigan</div>
+        <header class="fade-in">
+            <p class="sub-header">Para sa Natatanging Binibini</p>
+            <h1>Maligayang Kaarawan, <br> <span class="highlight">Xara Yashima</span></h1>
         </header>
 
-        <div class="poem-card">
-            <h2>Obra Maestra</h2>
-            <div class="poem-text">
-Ang buhok mo'y sutla, gabing mapayapa,
-Mata'y tsokolateng malalim, nakahahalina.
-Ilong na kay ganda, sining ang kapara,
-Katawa'y gitara, kurbang pambihira.
-
-Ngunit higit sa ganda ng iyong panlabas,
-Ang ugali mo'y ginto, tunay at wagas.
-Ikaw ay bulaklak na hindi kukupas,
-Sa mundo kong madilim, ikaw ang lunas.
+        <main class="card slide-up">
+            <div class="poem-content">
+                <p>
+                    Ang iyong buhok ay tila agos ng gabing payapa,<br>
+                    Maitim, madulas, sa hangin ay sumasayaw tuwina.<br>
+                    Ang 'yong mga mata’y kape na puno ng hiwaga,<br>
+                    May lalim at kinang na sa puso ay nagpapatanag.
+                </p>
+                <p>
+                    Ilong mo'y sining na maselan ang pagkaka-ukit,<br>
+                    Sa mukhang maamo, ito’y sadyang humahalina.<br>
+                    Katawa’y gitarang may kurbang kaakit-akit,<br>
+                    Isang obrang nilikha, na sa tingin ay biyaya.
+                </p>
+                <p>
+                    Ngunit higit sa ganda ng iyong panlabas na anyo,<br>
+                    Ang ugali mo’y ginto, busilak at totoo.<br>
+                    Ikaw ay diwata sa mundong magulo,<br>
+                    Maligayang Bati, Xara, kaibigan kong gusto.
+                </p>
             </div>
-        </div>
+        </main>
 
-        <section class="wish-section">
-            <h2>Isang Espesyal na Pagbati</h2>
-            <p>
-                Sa araw na ito, nais kong ipaalam sa'yo kung gaano ka kahalaga. 
-                Sana ay mapuno ang iyong taon ng ligaya, tagumpay, at mga pangarap na natupad. 
-                Manatili kang inspirasyon sa lahat ng nakapaligid sa'yo.
-            </p>
-            <a href="#" class="btn">Magdiwang Tayo!</a>
-        </section>
-
-        <footer>
-            Created with ❤️ for you.
+        <footer class="fade-in">
+            <p>Hiling ko ang iyong kaligayahan at tagumpay.</p>
+            <button onclick="celebrate()">Mag-Celebrate!</button>
         </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+        function celebrate() {
+            var duration = 3 * 1000;
+            var animationEnd = Date.now() + duration;
+            var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+            function randomInOut(min, max) {
+            return Math.random() * (max - min) + min;
+            }
+
+            var interval = setInterval(function() {
+            var timeLeft = animationEnd - Date.now();
+
+            if (timeLeft <= 0) {
+                return clearInterval(interval);
+            }
+
+            var particleCount = 50 * (timeLeft / duration);
+            confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInOut(0.1, 0.3), y: Math.random() - 0.2 } }));
+            confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInOut(0.7, 0.9), y: Math.random() - 0.2 } }));
+            }, 250);
+        }
+    </script>
 </body>
 </html>
