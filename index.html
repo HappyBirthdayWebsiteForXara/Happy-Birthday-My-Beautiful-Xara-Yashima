@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maligayang Kaarawan!</title>
+    <style>
+        /* General Reset and Fonts */
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', serif; /* Classic, professional font */
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Container Styling */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* Hero Section */
+        header {
+            padding: 60px 0;
+            animation: fadeIn 2s ease-in;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: #b76e79; /* Old Rose color */
+            margin-bottom: 10px;
+            font-weight: normal;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 40px;
+        }
+
+        /* Poem Section */
+        .poem-card {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+            border-top: 5px solid #b76e79;
+            transition: transform 0.3s ease;
+        }
+
+        .poem-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .poem-text {
+            font-size: 1.3rem;
+            color: #444;
+            white-space: pre-line; /* Preserves poetic line breaks */
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        /* Wish Section */
+        .wish-section {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #b76e79;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #b76e79;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: background 0.3s;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #a05a65;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #999;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+            .poem-text { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Maligayang Kaarawan</h1>
+            <div class="subtitle">Para sa isang natatanging kaibigan</div>
+        </header>
+
+        <div class="poem-card">
+            <h2>Obra Maestra</h2>
+            <div class="poem-text">
+Ang buhok mo'y sutla, gabing mapayapa,
+Mata'y tsokolateng malalim, nakahahalina.
+Ilong na kay ganda, sining ang kapara,
+Katawa'y gitara, kurbang pambihira.
+
+Ngunit higit sa ganda ng iyong panlabas,
+Ang ugali mo'y ginto, tunay at wagas.
+Ikaw ay bulaklak na hindi kukupas,
+Sa mundo kong madilim, ikaw ang lunas.
+            </div>
+        </div>
+
+        <section class="wish-section">
+            <h2>Isang Espesyal na Pagbati</h2>
+            <p>
+                Sa araw na ito, nais kong ipaalam sa'yo kung gaano ka kahalaga. 
+                Sana ay mapuno ang iyong taon ng ligaya, tagumpay, at mga pangarap na natupad. 
+                Manatili kang inspirasyon sa lahat ng nakapaligid sa'yo.
+            </p>
+            <a href="#" class="btn">Magdiwang Tayo!</a>
+        </section>
+
+        <footer>
+            Created with ❤️ for you.
+        </footer>
+    </div>
+
+</body>
+</html>
