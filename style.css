@@ -1,0 +1,133 @@
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Header Typography */
+header {
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: #2c3e50;
+    line-height: 1.2;
+}
+
+.sub-header {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    color: #b76e79; /* Rose Gold */
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.highlight {
+    color: #b76e79; /* Rose Gold */
+    background: -webkit-linear-gradient(#b76e79, #d6a4a4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Poem Card Styling */
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.poem-content p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #4a4a4a;
+    font-style: italic;
+}
+
+.poem-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Footer & Button */
+footer {
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+button {
+    background-color: #b76e79;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(183, 110, 121, 0.4);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(183, 110, 121, 0.6);
+    background-color: #a05d68;
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 1.5s ease-out;
+}
+
+.slide-up {
+    animation: slideUp 1.2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    h1 { font-size: 2.5rem; }
+    .card { padding: 25px; }
+    .poem-content p { font-size: 1.1rem; }
+}
